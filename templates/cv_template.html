@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Long Lê - CV</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy6pB6LZxPDkF1Ll/CZ+3nZGO9PPXmPDS" crossorigin="anonymous">
+    <style>
+        /* Additional Styles for Scroll Down Animation Popup */
+        .scroll-down-popup {
+            display: none;
+            position: fixed;
+            top: 25%; /* Adjust the top value to control vertical position */
+
+            left: 80%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: fadeInUp 0.5s ease-out, idleAnimation 1s infinite alternate ease-in-out;
+            z-index: 9999; /* Ensure the popup appears on top */
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes idleAnimation {
+            to {
+                transform: translateY(5px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-dark text-white text-center p-4">
+        <h1>Thanh Long Lê</h1>
+        <p>Software Developer</p>
+    </header>
+    
+    <div class="scroll-down-popup" id="scrollDownPopup">
+        Scroll down
+    </div>
+
+    <!-- Skills Section -->
+    <section class="container my-4 hide-section">
+        <h2>Skills</h2>
+        <ul class="list-unstyled">
+            <li>C++ || Python || C# || OOP || Android || JNI || Debugging || Git/SVN/Source manager... || HTML, CSS, Javascript || Web || Algorithms || Design patterns || Clean Coding || GUI Development || Software Development Life Cycle (SDLC) || Researching || Problem Solving || English || Engineering || Game Development</li>
+        </ul>
+    </section>
+
+    <section class="container my-4 hide-section">
+        <h2>Experience</h2>
+        <ul class="list-unstyled">
+            <li class="mb-4">
+                <h3>C++ Game Developer - Gameloft Vietnam</h3>
+                <p>Summary:
+                    Dynamic C++ Game Developer specializing in Android HD+ projects, contributing to end-to-end game
+                    development. Proven expertise in feature implementation, bug resolution, and efficient collaboration
+                    with Producers.
+                    Key Contributions:
+                    <ol>
+                        <li>Feature Implementation: Proficient in C++ for Android game development, ensuring seamless
+                            feature integration.</li>
+                        <li>Bug Resolution: Swift identification and resolution of bugs to enhance game performance.</li>
+                        <li>Task Management: Successful execution of assigned tasks, showcasing strong C++ programming
+                            skills.</li>
+                        <li>Estimation Expertise: Accurate time and complexity estimates for effective project planning.</li>
+                        <li>Collaboration: Collaborative approach with Producers for optimal bug-fix solutions.</li>
+                    </ol>
+                    Notable Accomplishments:
+                    <ul>
+                        <li>Successfully developed LEGO LEGACY: HEROES UNBOXED PREMIUM NETFLIX game, reaching over 100
+                            thousand+ downloads.</li>
+                        <li>Set up new Jenkins for daily and weekly builds release, Python tools.</li>
+                        <li>Add 12 language translations to LEGO LEGACY.</li>
+                    </ul>
+                    I am passionate about staying up-to-date with industry trends and emerging technologies, and I am always
+                    looking for opportunities to expand my skillset and take on new challenges.
+                </p>
+            </li>
+            <li class="mb-4">
+                <h3>C++ Game Developer Intern - Gameloft Vietnam</h3>
+                <p>Principal Accountabilities after Initial Training:
+                    Contribution to Department and Studio:
+                    Actively involved in the development and enhancement of programming/management tools to streamline
+                    workflows.
+                    Proposes innovative ideas to contribute to the overall development of the team, department, and studio.
+                    General Responsibilities as a Developer:
+                    <ol>
+                        <li>Bug Identification and Resolution: Vigilantly monitors the bug database to pinpoint
+                            project-specific issues promptly.</li>
+                        <li>Collaboration: Collaborates with Producers to determine optimal solutions for bug fixes while
+                            meeting project deadlines.</li>
+                    </ol>
+                    As an intern, I contribute to the improvement of working processes, team organization, and overall studio
+                    development. My focus is on efficient bug resolution and active participation in enhancing tools and
+                    workflows. Open to learning and proposing innovative ideas to contribute to the team's success.
+                </p>
+            </li>
+            <!-- Add more experience items as needed -->
+        </ul>
+    </section>
+
+    <section class="container my-4 hide-section">
+        <h2>Education</h2>
+        <p>Hanoi University of Industry Bachelor's degree, Information Technology</p>
+        <h2>Summary</h2>
+        <p>I am actively seeking an entry-level position at a reputable company to apply my strong foundation in development and insatiable curiosity for technology. As a self-taught programmer with a relentless drive to improve, I've dedicated countless hours to refining my skills through online courses and active participation in coding communities.</p>
+        
+        <p>My passion for programming is matched by my determination to learn and grow. I am eager to bring these qualities to a dynamic team where I can make a meaningful impact. While I may not meet every requirement on your list at the moment, I am confident that my drive, enthusiasm, and eagerness to learn will quickly bridge any gaps.</p>
+        
+        <p>I am committed to putting in the hard work needed to rapidly develop new skills and knowledge, enabling me to contribute effectively to your team's success. If you're seeking a passionate, driven, and dedicated individual, let's connect. I am excited about the possibility of joining a team where I can grow professionally, collaborate with talented individuals, and contribute to achieving shared goals.</p>
+        
+        <p>Feel free to reach out to me directly or share this post with anyone interested in discussing potential opportunities. Thank you for your time, and I look forward to hearing from you soon!</p>
+        
+        <p>#CPlusPlus #Programming #EntryLevel #CareerOpportunities #GrowthMindset</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center p-4 mt-5">
+        <p>Contact: thanhlong150800@gmail.com | Phone: 0796274049</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/thanhlong27122000" style="color: ffc107;"> thanhlong27122000</a></p>
+    </footer>
+
+    <!-- JavaScript and Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-q3JNZiDoxI6Z3m7PEtydoOUa7sO3q7ob22pX5vee/3gMy3oWw8IZIw6cT3sEMEP3" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy6pB6LZxPDkF1Ll/CZ+3nZGO9PPXmPDS" crossorigin="anonymous"></script>
+     <!-- Custom JavaScript for scroll reveal effect -->
+     <script>
+        // Function to check if an element is in the viewport
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Function to handle scroll events
+        function handleScroll() {
+            // Get all sections with the hide-section class
+            var sections = document.querySelectorAll('.hide-section');
+
+            // Check each section and add the show-section class if it's in the viewport
+            sections.forEach(function(section) {
+                if (isElementInViewport(section)) {
+                    section.classList.add('show-section');
+                }
+            });
+        }
+
+        // Add an event listener for the scroll event
+        window.addEventListener('scroll', handleScroll);
+
+        // Trigger the handleScroll function once to check initial visibility
+        handleScroll();
+    </script>
+
+     <script>
+        // Show the scroll down popup after a delay
+        setTimeout(function () {
+            document.getElementById('scrollDownPopup').style.display = 'block';
+        }, 2000); // Adjust the delay (in milliseconds) as needed
+    </script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+/* Existing styles */
+
+body {
+    background-image: url('body.jpg'); /* Đường dẫn đến hình ảnh của bạn */
+    background-size: cover; /* Kích thước hình ảnh sẽ che phủ toàn bộ phần nền */
+    background-repeat: no-repeat; /* Ngăn lặp lại hình ảnh */
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-top: 13rem; /* Kích thước của header */
+    padding-bottom: 2rem; /* Kích thước của footer */
+}
+
+header {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 5px solid #ffc107;
+}
+
+header img {
+    border-radius: 50%;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto; /* Chỉnh sửa đây */
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    margin-top: 2rem; /* Khoảng cách từ header */
+    margin-bottom: 2rem; /* Khoảng cách đến footer */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+h2 {
+    color: #343a40;
+    border-bottom: 2px solid #343a40;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.5em;
+    position: relative;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    position: relative;
+}
+
+footer a {
+    color: #ffc107;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #343a40 transparent;
+}
+
+/* Additional styles for sticky header and footer */
+
+header, footer {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+/* Add a class for hiding sections initially */
+.hide-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Add a class for revealing sections */
+.show-section {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Your other existing styles... */
+
+
+/* WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f5f5f5; /* Light grey background for the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #3498db, #2ecc71); /* Gradient background for the thumb */
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #2980b9, #27ae60); /* Gradient background on hover */
+}
+
+/* Firefox */
+::-moz-scrollbar {
+    width: 12px;
+}
+
+::-moz-scrollbar-track {
+    background: #f5f5f5;
+}
+
+::-moz-scrollbar-thumb {
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    border-radius: 6px;
+}
+
+::-moz-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #2980b9, #27ae60);
+}
+
+/* Microsoft Edge/Internet Explorer */
+::-ms-scrollbar {
+    width: 12px;
+}
+
+::-ms-scrollbar-track {
+    background: #f5f5f5;
+}
+
+::-ms-scrollbar-thumb {
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    border-radius: 6px;
+}
+
+::-ms-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #2980b9, #27ae60);
+}
