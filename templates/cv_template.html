@@ -6,40 +6,6 @@
     <title>Thanh Long Lê - CV</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy6pB6LZxPDkF1Ll/CZ+3nZGO9PPXmPDS" crossorigin="anonymous">
-    <style>
-        /* Additional Styles for Scroll Down Animation Popup */
-        .scroll-down-popup {
-            display: none;
-            position: fixed;
-            top: 25%; /* Adjust the top value to control vertical position */
-
-            left: 80%;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
-            border-radius: 5px;
-            cursor: pointer;
-            animation: fadeInUp 0.5s ease-out, idleAnimation 1s infinite alternate ease-in-out;
-            z-index: 9999; /* Ensure the popup appears on top */
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes idleAnimation {
-            to {
-                transform: translateY(5px);
-            }
-        }
-    </style>
 </head>
 <body>
 
@@ -59,6 +25,9 @@
         <ul class="list-unstyled">
             <li>C++ || Python || C# || OOP || Android || JNI || Debugging || Git/SVN/Source manager... || HTML, CSS, Javascript || Web || Algorithms || Design patterns || Clean Coding || GUI Development || Software Development Life Cycle (SDLC) || Researching || Problem Solving || English || Engineering || Game Development</li>
         </ul>
+
+        <h2>Education</h2>
+        <p>Hanoi University of Industry Bachelor's degree, Information Technology</p>
     </section>
 
     <section class="container my-4 hide-section">
@@ -115,8 +84,6 @@
     </section>
 
     <section class="container my-4 hide-section">
-        <h2>Education</h2>
-        <p>Hanoi University of Industry Bachelor's degree, Information Technology</p>
         <h2>Summary</h2>
         <p>I am actively seeking an entry-level position at a reputable company to apply my strong foundation in development and insatiable curiosity for technology. As a self-taught programmer with a relentless drive to improve, I've dedicated countless hours to refining my skills through online courses and active participation in coding communities.</p>
         
